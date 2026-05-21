@@ -216,3 +216,47 @@
 <img src="imges/img1.25.png">
 
 5. **Push and Pull with GitHub**
+
+## How to use **Pull Command**
+- First I edit my index.html file with using github code editor (I removed all comments)
+- Second I check git bash
+```git bash
+    git status
+```
+<img src="imges/img1.26.png">
+
+- The **origin/main** is a our project branch for uploaded github
+
+- Now we want to get github edited data in our git, Then we use **git pull command**
+```git bash
+    git pull origin
+```
+<img src="imges/img1.27.png">
+
+## Note:
+- If we think have other branch, it name is 'test', Now this command change this type;
+```git bash
+    git pull origin test
+```
+## How to use **Push Command**
+
+- First I edit my index.html file with using github code editor (I add all comments)
+- Second I check git bash
+```git bash
+    git status
+```
+<img src="imges/img1.26.png">
+
+- The **origin/main** is a our project branch for uploaded github
+
+- Now we want to get github edited data in our git, Then we use **git pull command**
+```git bash
+    git pull origin
+```
+<img src="imges/img1.27.png">
+
+## Note:
+- If we think have other branch, it name is 'test', Now this command change this type;
+```git bash
+    git pull origin test
+```
