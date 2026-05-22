@@ -1,25 +1,53 @@
-# GIT and GITHUB
+# GIT and GITHUB Complete Guide
 
-1. **Introduction and Setup**
+Welcome to the ultimate beginner-friendly guide to learning Git and GitHub! This repository serves as a step-by-step documentation covering everything from basic local setup to branch management and remote hosting.
 
-- Install git
-  [Download](https://git-scm.com/install/windows)
+---
 
-2. **GIT Repository and Commit**
+## 👤 Author & Contribution
 
-## How to add Username and Email in Git
+- **Author:** [Mr. Nexora](https://github.com/mr-nexora) 🚀
+- **Project Purpose:** This repository was created as a personal learning milestone while mastering version control systems for Full-Stack Development and DevSecOps workflows.
 
-```git bash
-    // How to add username
-    git config global usernuser.name "John"
-```
+### 💖 Special Thanks & Acknowledgments
 
-```git bash
-    // How to add email
-    git config global usernuser.email "John@gmail.com"
-```
+This guide was built and structured while learning from an amazing YouTube tutorial playlist. Huge thanks to the creator for the clear explanations!
 
-- This method add all folders and files this username and email
+- **Tutorial Source:** [SL CodingGura YouTube Channel]
+- **Watch Playlist:** [Click Here to Watch the Playlist](👉 https://youtube.com/playlist?list=PLCuKf5HB0VfkcuAIcZQQR8e9_7-DhfADo&si=QS8xOr7M8BsYARgn)
+
+---
+
+## 📌 Quick Overview: What is inside?
+
+This repository is structured as a complete roadmap for absolute beginners. Inside, you will find:
+
+1.  **Git Installation & Global Configurations:** Setting up your environment.
+2.  **Local Repository Operations:** Initializing, tracking status, and staging files.
+3.  **The Art of Commits:** Saving code checkpoints with clean log histories.
+4.  **Branching & Merging:** Safe environment management to experiment with new features and fixing bugs without breaking the main production code.
+5.  **GitHub Integration:** Hosting projects on the cloud and pushing updates.
+6.  **Ultimate Cheat Sheet:** A quick reference table for daily commands.
+
+---
+
+## 1. Introduction and Setup
+
+### Install Git
+
+Download and install Git for Windows from the official website:
+[Download Git for Windows](https://git-scm.com/install/windows)
+
+### How to Configure Username and Email globally
+
+Before making any commits, configure your global identity. This links your name and email to all your repositories.
+
+````bash
+# Set your global username
+git config --global user.name "John Doe"
+
+# Set your global email
+git config --global user.email "john@gmail.com"
 
 ---
 
@@ -31,11 +59,11 @@
 
 ### Note:
 
-- Creatr New folder
+- Create New folder
 
 ```git bash
     mkdir gitTest // gitTest is a folder name
-```
+````
 
 - Go the inside of folder
 
@@ -51,14 +79,14 @@
 
 ---
 
-## How to git inisialize our project
+## How to git Initialize our project
 
 ```git bash
     git init
 ```
 
-<img src="imges/img1.1.png">
-<img src="imges/img1.2.png">
+![Status Screenshot](imges/img1.1.png)
+![Status Screenshot](imges/img1.2.png)
 
 ## How to view our git repository in git bash
 
@@ -66,7 +94,7 @@
     ls -la
 ```
 
-<img src="imges/img1.3.png">
+![Status Screenshot](imges/img1.3.png)
 
 ## How to view our git repository status
 
@@ -74,8 +102,9 @@
     git status
 ```
 
-<img src="imges/img1.4.png">
-- We  can look untrackrd files, These are not add inside a repo...
+![Status Screenshot](imges/img1.4.png)
+
+- We can look Untracked files, These are not add inside a repo...
 
 ## How to add our files in repository
 
@@ -83,16 +112,16 @@
     git add index.html
 ```
 
-<img src="imges/img1.5.png">
+![Status Screenshot](imges/img1.5.png)
 
-## How to add all files in one commend
+## How to add all files in one Command
 
 ```git bash
     git add --all
 ```
 
-<img src="imges/img1.6.png">
-<img src="imges/img1.7.png">
+![Status Screenshot](imges/img1.6.png)
+![Status Screenshot](imges/img1.7.png)
 
 ## How to add git commit
 
@@ -100,7 +129,7 @@
      git commit -m "I created my first project and I added some files to it"
 ```
 
-<img src="imges/img1.8.png">
+![Status Screenshot](imges/img1.8.png)
 
 ## How to view git commit
 
@@ -108,7 +137,7 @@
     git log
 ```
 
-<img src="imges/img1.9.png">
+![Status Screenshot](imges/img1.9.png)
 
 3. **GIT Branch and Branch Merge**
 
@@ -127,7 +156,7 @@
     git branch
 ```
 
-<img src="imges/img1.10.png">
+![Status Screenshot](imges/img1.10.png)
 
 ## How to checkout our branch
 
@@ -135,14 +164,14 @@
     git checkout test
 ```
 
-<img src="imges/img1.11.png">
+![Status Screenshot](imges/img1.11.png)
 
 ---
 
 - Now I edit this git.md file in test branch
-- Now I commit this changers
-  <img src="imges/img1.12.png">
-  <img src="imges/img1.13.png">
+- Now I commit this Changes
+  ![Status Screenshot](imges/img1.12.png)
+  ![Status Screenshot](imges/img1.13.png)
 
 - Now we go our master branch and look;
 
@@ -150,8 +179,8 @@
     git checkout master
 ```
 
-<img src="imges/img1.14.png">
-<img src="imges/img1.15.png">
+![Status Screenshot](imges/img1.14.png)
+![Status Screenshot](imges/img1.15.png)
 
 ## How to create branch and checkout this branch one time ( Emergency branch creating)
 
@@ -159,12 +188,12 @@
     git checkout -b test1 // test1 is new branch name
 ```
 
-<img src="imges/img1.16.png">
+![Status Screenshot](imges/img1.16.png)
 
 ---
 
 - Look git branch
-  <img src="imges/img1.17.png">
+  ![Status Screenshot](imges/img1.17.png)
 
 ---
 
@@ -174,12 +203,12 @@
     git branch -d test1
 ```
 
-<img src="imges/img1.18.png">
+![Status Screenshot](imges/img1.18.png)
 
 ---
 
 - Look git branch
-  <img src="imges/img1.19.png">
+  ![Status Screenshot](imges/img1.19.png)
 
 ---
 
@@ -191,10 +220,8 @@
     git checkout master
 ```
 
-<img src="imges/img1.20.png">
-<img src="imges/img1.21.png">
-
-4. **GutHub Intro and Setup**
+![Status Screenshot](imges/img1.20.png)
+![Status Screenshot](imges/img1.21.png) 4. **GutHub Intro and Setup**
 
 - **Create github account**
 
@@ -203,60 +230,119 @@
 1. Go repository tab
 2. click **new button**
 3. Fill details and click **create repository button**
-   <img src="imges/img1.22.png">
+   ![Status Screenshot](imges/img1.22.png)
 
 ## How to upload our project in this repo
 
 - Github give three commands
-  <img src="imges/img1.23.png">
+  ![Status Screenshot](imges/img1.23.png)
 - You add this commands in your git bash termnal
-  <img src="imges/img1.24.png">
+  ![Status Screenshot](imges/img1.24.png)
 - After load termonal and refreash your browse
 
-<img src="imges/img1.25.png">
+![Status Screenshot](imges/img1.25.png)
 
 5. **Push and Pull with GitHub**
 
 ## How to use **Pull Command**
+
 - First I edit my index.html file with using github code editor (I removed all comments)
 - Second I check git bash
+
 ```git bash
     git status
 ```
-<img src="imges/img1.26.png">
+
+![Status Screenshot](imges/img1.26.png)
 
 - The **origin/main** is a our project branch for uploaded github
 
 - Now we want to get github edited data in our git, Then we use **git pull command**
+
 ```git bash
     git pull origin
 ```
-<img src="imges/img1.27.png">
+
+![Status Screenshot](imges/img1.27.png)
 
 ## Note:
+
 - If we think have other branch, it name is 'test', Now this command change this type;
+
 ```git bash
     git pull origin test
 ```
+
 ## How to use **Push Command**
 
 - First I edit my index.html file with using github code editor (I add all comments)
 - Second I check git bash
+
 ```git bash
     git status
 ```
-<img src="imges/img1.26.png">
+
+![Status Screenshot](imges/img1.28.png)
+![Status Screenshot](imges/img1.29.png)
 
 - The **origin/main** is a our project branch for uploaded github
 
 - Now we want to get github edited data in our git, Then we use **git pull command**
+
 ```git bash
-    git pull origin
+    git push origin
 ```
-<img src="imges/img1.27.png">
+
+![Status Screenshot](imges/img1.30.png)
 
 ## Note:
+
 - If we think have other branch, it name is 'test', Now this command change this type;
+
 ```git bash
-    git pull origin test
+    git push origin test
 ```
+
+---
+
+## How to create git brancher
+
+- Go github repo and click **Main button**
+  ![Status Screenshot](imges/img1.31.png)
+
+- Add branch name and click **create branch button**
+  ![Status Screenshot](imges/img1.32.png)
+
+## How to add github project git branch from our local git repo
+
+![Status Screenshot](imges/img1.33.png)
+
+```git bash
+    git pull
+```
+
+![Status Screenshot](imges/img1.34.png)
+
+- Show the Git branch
+
+```git bash
+    git branch -a
+```
+
+![Status Screenshot](imges/img1.34.png)
+
+- Now go to the git branch
+
+```git bash
+    git checkout Test_Github_Branch
+```
+
+![Status Screenshot](imges/img1.35.png)
+
+- Now check branch
+
+```git bash
+    git branch
+```
+
+![Status Screenshot](imges/img1.36.png)
